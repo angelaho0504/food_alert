@@ -11,7 +11,7 @@ git clone https://github.com/hsiaoyi0504/food_alert
 cd food_alert
 python -m venv venv
 source venv/bin/activate
-pip install -r server/requirements.txt
+pip install -r requirements.txt
 python build.py  # build the data that will be used by server
 ```
 
