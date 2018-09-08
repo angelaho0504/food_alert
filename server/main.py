@@ -17,12 +17,17 @@ def get_food_info(food_name):
         report_classes = []
         for i in ids:
             report_classes.append(id_report_mapping[i]['classification'])
+        num_class_1 = report_classes.count('Class I')
+        num_class_2 = report_classes.count('Class II')
+        num_class_3 = report_classes.count('Class III')
 
         return jsonify({
             'num_of_report': num_of_report,
             'overall_score': '5',
             'food_name': food_name,
-            'report_classes': report_classes
+            'num_class_1': num_class_1,
+            'num_class_2': num_class_2,
+            'num_class_3': num_class_3,
         })
     else:
         return jsonify({
