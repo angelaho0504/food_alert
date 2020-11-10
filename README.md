@@ -7,7 +7,7 @@
 ## Installation
 
 ```shell
-git clone https://github.com/hsiaoyi0504/food_alert
+git clone https://github.com/angelaho0504/food_alert
 cd food_alert
 python -m venv venv
 source venv/bin/activate
